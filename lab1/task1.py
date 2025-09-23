@@ -27,7 +27,7 @@ df = df.drop(columns=['№',
                       'Номер предложения (для целевого приема)'])
 df = df.dropna(axis=1, how='all')
 
-# Определение типов данных
+# 3. Определение типов данных
 df = df.astype(int)
 # print(df.dtypes)
 
@@ -115,6 +115,3 @@ df_result = pd.DataFrame({
     'Кол-во студентов тип_2': [count_filtered_students2]
 })
 print(df_result)
-
-
-print(df.columns[2])
